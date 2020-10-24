@@ -1,11 +1,14 @@
 import React from 'react'
 import {Parallax, Background} from 'react-parallax'
 import { makeStyles } from '@material-ui/core/styles';
+import {Grid} from '@material-ui/core'
 import TopMenu from './Menu/topMenu'
 import CompanyTag from './Menu/CompanyTagLine'
 import AboutUs from './AboutUs'
 import '../assets/css/style.css'
 import Service from './Services'
+import TableView from './tabledisplay'
+import ListViewData from './listViewDisplay'
 
 const useStyles = makeStyles((theme) => ({
     root: {
@@ -52,8 +55,15 @@ const Header = () => {
             <div className={classes.main, classes.mainRaised} className="infoi">
                <AboutUs /> 
                <div>
-                <Service />
-            </div>
+                   <h1 style={{textAlign:"center"}}>Table And List Data Display</h1>
+                   <Grid container spacing={2}>
+                        <TableView />
+                        <ListViewData />
+                    </Grid>
+               </div>
+               {/* <div>
+                    <Service />
+                </div> */}
             </div>
         </div>
     )

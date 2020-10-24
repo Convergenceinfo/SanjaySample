@@ -54,7 +54,7 @@ export default function MediaCard() {
 
         
         </Card>
-        <Card className={classes.root}>
+        {/* <Card className={classes.root}>
       <CardActionArea>
         <CardMedia
           className={classes.media}
@@ -81,7 +81,7 @@ export default function MediaCard() {
       </CardActions>
 
       
-    </Card>
+    </Card> */}
     </div>
   );
 }
